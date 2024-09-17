@@ -18,7 +18,7 @@ body  {
     padding: 1rem 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     flex-direction: row;
 }
 
@@ -34,14 +34,33 @@ body  {
 .main-nav .nav-link{
     color: rgb(0, 0, 0);
     text-decoration: none;
-    transition: color 0.6s;
     margin: 5px;
+    font-size: 24.4px;
+    transition: color 0.6s;
 }
 
 .main-nav .nav-link:hover{
     color: rgb(40, 42, 44);
-    text-decoration: none;
-    
+    transition: color 0.6s;
+    transform: scale(1.4);
+}
+
+#logo-img {
+    width: 120px;
+    height: 120px;
+}
+
+#links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1200px;
+    justify-content: space-between;
 }
 
 .info {
