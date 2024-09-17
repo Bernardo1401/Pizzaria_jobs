@@ -43,6 +43,7 @@ body  {
     color: rgb(40, 42, 44);
     transition: color 0.6s;
     transform: scale(1.4);
+    text-decoration: underline;
 }
 
 #logo-img {
@@ -61,4 +62,31 @@ body  {
     align-items: center;
     width: 1200px;
     justify-content: space-between;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input, select, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }

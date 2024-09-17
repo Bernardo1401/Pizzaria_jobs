@@ -43,6 +43,7 @@ body  {
     color: rgb(40, 42, 44);
     transition: color 0.6s;
     transform: scale(1.4);
+    text-decoration: underline;
 }
 
 #logo-img {
