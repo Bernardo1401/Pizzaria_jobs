@@ -7,7 +7,10 @@
 body  {
     font-family: "Helvetica Neue", sans-serif;
     line-height: 1.6;
-    background-color:rgb(255, 255, 255);
+    background-image: url(../image/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: rgb(0, 0, 0);
 }
 
@@ -48,6 +51,7 @@ body  {
 #logo-img {
     width: 120px;
     height: 120px;
+    border-radius: 50px;
 }
 
 #links {
@@ -104,4 +108,30 @@ body  {
     align-items: center;
     display: flex;
     height: 150px;
+}
+
+.section-image{
+    background-color: rgb(231,215, 70);
+    height: auto;
+    width: 50%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 25%;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+}
+
+.central-image{
+    width: 900px;
+    height: 700px;
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.central-text {
+    font-size: 20px;
 }
