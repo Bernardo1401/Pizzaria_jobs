@@ -90,3 +90,12 @@ input, select, textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+.site-footer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: rgb(231, 215, 70);
+    align-content: flex-end;
+    margin-top: 293px;
+}
