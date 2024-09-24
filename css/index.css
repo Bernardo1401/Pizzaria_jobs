@@ -112,26 +112,36 @@ body  {
 
 .section-image{
     background-color: rgb(231,215, 70);
-    height: auto;
-    width: 50%;
+    height: 450px;
+    width: 700px;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 20px;
-    margin-top: 10px;
-    margin-left: 25%;
     margin-bottom: 20px;
     border: 1px solid #000000;
+    justify-content: flex-end;
+    border-radius: 15%;
+    margin-top: 2%;
 }
 
 .central-image{
-    width: 900px;
-    height: 700px;
+    width: 450px;
+    height: 300px;
     align-items: center;
     display: flex;
     margin-top: 10px;
     justify-content: center;
+    border-radius: 10%;
+    margin-left: 90px;
 }
 
 .central-text {
-    font-size: 20px;
+    font-size: 17px;
+}
+
+.container{
+    justify-content: space-around;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
 }
