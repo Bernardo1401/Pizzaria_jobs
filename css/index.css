@@ -145,3 +145,12 @@ body  {
     display: flex;
     align-items: center;
 }
+
+.site-footer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: rgb(231, 215, 70);
+    align-content: flex-end;
+    margin-top: 6.68%;
+}
