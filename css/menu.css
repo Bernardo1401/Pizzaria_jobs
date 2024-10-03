@@ -5,6 +5,16 @@
     align-items: center;
 }
 
+:root{
+    --cor-header: rgb(231, 215, 70);
+    --cor-footer: rgb(231, 215, 70);
+    --cor-conteiner: #fff ;
+    --cor-texto: rgb(0, 0, 0);
+    --cor-bg: rgb(0, 0, 0);
+    --cor-titulo:rgb(231, 215, 70);
+    --cor-border:rgb(231, 215, 70);
+}
+
 body  {
     font-family: "Helvetica Neue", sans-serif;
     line-height: 1.6;
@@ -12,7 +22,7 @@ body  {
 }
 
 .site-header {
-    background-color: rgb(231, 215, 70);
+    background-color: var(--cor-header);
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 1rem 0;
@@ -21,7 +31,6 @@ body  {
     justify-content: left;
     flex-direction: row;
 }
-
 .nav-list {
     display: flex;
     flex-direction: row;
@@ -71,21 +80,19 @@ body  {
 }
 
 .title:hover{
-    -webkit-transform: scale(1.0);
     transform: scale(1.3);
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(255, 230, 0, 0.5));
     filter: drop-shadow(15px 10px 5px rgba(255, 230, 0, 0.5));
-    }
+}
 
 .section-image{
-    background-color: rgb(0, 0, 0);
+    background-color: var(--cor-bg);
     height: 400px;
     width: 700px;
-    color: rgb(231, 215, 70);
+    color: var(--cor-titulo);
     text-align: center;
     padding: 20px;
     margin-bottom: 20px;
-    border: 4px solid rgb(231, 215, 70);
+    border: 4px solid var(--cor-border);
     justify-content: flex-end;
     border-radius: 15%;
     margin-top: 2%;
@@ -112,21 +119,27 @@ body  {
     display: flex;
     align-items: center;
 }
+
 h1 {
     text-align: center;
 }
+
 form {
     display: flex;
     flex-direction: column;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--cor-bg);
     border-radius: 10px;
     width: 40%;
-    color: black;
+    color: var(--cor-titulo);
+    padding: 20px;
+    margin: 20px auto;
 }
+
 label {
     margin-bottom: 5px;
     font-weight: bold;
 }
+
 input, select, textarea {
     margin-bottom: 15px;
     padding: 10px;
@@ -136,11 +149,137 @@ input, select, textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-.site-footer{
+
+.site-footer {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    background-color: rgb(231, 215, 70);
+    background-color:var(--cor-footer);
     align-content: flex-end;
     margin-top: 6.68%;
+}
+
+@media (max-width: 1024px) {
+    .top {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-list {
+        width: 300px;
+        font-size: 18px;
+    }
+
+    .section-image {
+        width: 500px;
+        height: auto;
+    }
+
+    .central-image {
+        width: 300px;
+        height: 200px;
+    }
+
+    form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .top {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .article-title {
+        font-size: 40px;
+    }
+
+    .section-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .central-image {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .main-nav .nav-link {
+        font-size: 20px;
+    }
+
+    .info {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .section-image {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .central-image {
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav-list {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-nav .nav-link {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .article-title {
+        font-size: 30px;
+    }
+
+    .section-image {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .central-image {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .info {
+        width: 90%;
+        margin-left: 5%;
+    }
 }
