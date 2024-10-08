@@ -11,11 +11,16 @@
     --cor-texto: rgb(0, 0, 0);
 }
 
-body  {
+body {
     font-family: "Helvetica Neue", sans-serif;
     line-height: 1.6;
-    color: black;
+    background-image: url(../image/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0, 0, 0);
 }
+
 
 .site-header {
     background-color: var(--cor-header);
@@ -36,20 +41,18 @@ body  {
     justify-content: space-between;
     align-items: center;
 }
-
-.main-nav .nav-link {
-    color: var(--cor-texto);
+.main-nav .nav-link{
+    color: rgb(0, 0, 0);
     text-decoration: none;
     margin: 5px;
     font-size: 24.4px;
     transition: color 0.6s;
 }
 
-.main-nav .nav-link:hover {
+.main-nav .nav-link:hover{
     color: rgb(40, 42, 44);
     transition: color 0.6s;
     transform: scale(1.4);
-    text-decoration: underline;
 }
 
 #logo-img {
@@ -58,11 +61,16 @@ body  {
     border-radius: 50px;
 }
 
+#links {
+    display: flex;
+    justify-content: space-around;
+}
+
 .top {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    width: 1200px;
     justify-content: space-between;
 }
 
